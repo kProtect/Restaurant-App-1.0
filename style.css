@@ -1,24 +1,15 @@
-<<<<<<< HEAD
-header {
+headerg {
     width: 400px;
     margin: auto;
 
 
 }
 nav { padding
-=======
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
->>>>>>> ca2be99385f9f3571b2fa3cdb72171252c14403b
 
 body {
     background-color: lightcoral;
 }
 
-<<<<<<< HEAD
 body {
     background-color: brown;
 
@@ -31,7 +22,6 @@ figure {
     margin-left: 40px;
     margin-right: 40px;
 }
-=======
 header {
     padding: 20px;
 }
@@ -53,4 +43,3 @@ header nav ul li{
     padding: 10px;
 }
 
->>>>>>> ca2be99385f9f3571b2fa3cdb72171252c14403b
