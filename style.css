@@ -1,38 +1,14 @@
-<<<<<<< HEAD
-header {
-    width: 400px;
-    margin: auto;
-
-
-}
-nav { padding
-=======
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: white;
 }
->>>>>>> ca2be99385f9f3571b2fa3cdb72171252c14403b
 
 body {
     background-color: lightskyblue;
 }
 
-<<<<<<< HEAD
-body {
-    background-color: brown;
-
-}
-
-figure {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-=======
 header {
     padding: 20px;
 }
@@ -57,7 +33,6 @@ header nav ul li{
 }
 
 nav ul li a {
-    padding: 8px 50px;
+    padding: 8px 30px;
 }
 
->>>>>>> ca2be99385f9f3571b2fa3cdb72171252c14403b
