@@ -1,13 +1,31 @@
 *{
-   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-header { width: 400px;
-    margin: auto;
+body {
+    background-color: lightcoral;
 }
-body {background-color: lightcoral;
 
+header {
+    padding: 20px;
 }
-ul{
+
+
+header h1 {
     display: inline-block;
 }
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
