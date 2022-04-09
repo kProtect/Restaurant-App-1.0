@@ -1,9 +1,11 @@
+*{
+   
+}
+
 header { width: 400px;
     margin: auto;
-
-
 }
-body {background-color: brown;
+body {background-color: lightcoral;
 
 }
 ul{
