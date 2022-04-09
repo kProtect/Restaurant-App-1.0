@@ -9,3 +9,16 @@
     height: 120px;
 }
 
+header {
+    background-color: darkgray;
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+    font-size: x-large;
+    font-family: cursive;
+    border: solid;
+    
+}
+
+main {
+    background-color: aqua;
+}
