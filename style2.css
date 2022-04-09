@@ -1,24 +1,42 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 #comment {
-    width: 400px;
-    height: 120px;
+    width: 780px height: 1000px;
+    font-size: 25px;
 }
 
 header {
     background-color: darkgray;
     text-align: center;
-    padding: 20px 30px 20px 30px;
+    padding: 100px 20px 100px 20px;
     font-size: x-large;
     font-family: cursive;
     border: solid;
-    
 }
 
 main {
-    background-color: aqua;
+    padding: 200px;
+
+}
+
+body {
+    background-image: url(/pics/society-restaurant-melbourne-dining-room-front.jpg);
+    height: 100%;
+    width: 100%;
+}
+
+#submit {
+    font-family: cursive;
+    font-size: x-large;
+}
+
+span {
+    background-color: rgb(221, 221, 221);
+    color: rgb(47, 58, 68);
+    font-size: 200px;
 }
