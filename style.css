@@ -6,12 +6,12 @@
 }
 
 body {
-    background-color: lightskyblue;
+    background-color: rgb(88, 180, 238);
 }
 
 header {
     padding: 20px;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.144);
 }
 
 header h1 {
@@ -43,5 +43,5 @@ nav ul li a {
     background-image: url(/pics/lobby.webp);
     background-size: cover;
 background-repeat: no-repeat;
-height: 100vh;
+height: 700px;
 }
