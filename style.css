@@ -11,13 +11,16 @@ body {
 
 header {
     padding: 20px;
+    background-color: gray;
 }
 
 header h1 {
+
     display: inline-block;
 }
 
 header nav {
+
     padding-top: 15px;
     margin-right: 20px;
     float: right;
