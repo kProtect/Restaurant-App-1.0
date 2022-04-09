@@ -17,6 +17,7 @@ header {
 header h1 {
 
     display: inline-block;
+    color: black;
 }
 
 header nav {
@@ -43,5 +44,14 @@ nav ul li a {
     background-image: url(/pics/lobby.webp);
     background-size: cover;
 background-repeat: no-repeat;
-height: 700px;
+height: 900px;
+}
+
+li {
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+a {
+    color: black;
 }
