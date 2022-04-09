@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background-color: rgb(88, 180, 238);
+}
+
+header {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+header h1 {
+
+    display: inline-block;
+}
+
+header nav {
+
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header div ul {
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 8px 30px;
+}
+
+.background_image {
+    background-image: url(/pics/lobby.webp);
+    background-size: cover;
+background-repeat: no-repeat;
+height: 700px;
+}
