@@ -1,0 +1,11 @@
+header { width: 400px;
+    margin: auto;
+
+
+}
+body {background-color: brown;
+
+}
+ul{
+    display: inline-block;
+}
