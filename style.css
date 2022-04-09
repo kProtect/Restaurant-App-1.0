@@ -39,4 +39,9 @@ nav ul li a {
     padding: 8px 30px;
 }
 
-
+.background_image {
+    background-image: url(/pics/lobby.webp);
+    background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
+}
