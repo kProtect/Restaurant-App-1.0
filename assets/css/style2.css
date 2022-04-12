@@ -1,24 +1,48 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 #comment {
-    width: 400px;
-    height: 120px;
+    width: 350px;
+    height: 350px;
+    font-size: 25px;
 }
 
 header {
-    background-color: darkgray;
+    background-color: rgb(0, 0, 0);
     text-align: center;
-    padding: 20px 30px 20px 30px;
+    padding: 100px 20px 100px 20px;
     font-size: x-large;
     font-family: cursive;
-    border: solid;
-    
+    color:rgb(221, 221, 221)
 }
 
 main {
-    background-color: aqua;
+    padding: 200px;
+
+}
+
+body {
+    background-image: url(/pics/1484829698-07-wm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#submit {
+    font-family: cursive;
+    font-size: x-large;
+}
+
+span {
+    background-color: rgb(221, 221, 221);
+    color: rgb(47, 58, 68);
+    font-size: 200px;
+}
+
+span:hover {
+    background-color: rgb(209, 169, 38);
+    color: gold;
 }
