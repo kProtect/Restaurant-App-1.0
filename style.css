@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 .background_image {
-    background-image: url(/pics/lobby.webp);
+    background-image: url(./pics/lobby.webp);
     background-size: cover;
 background-repeat: no-repeat;
 height: 900px;
