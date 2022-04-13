@@ -7,8 +7,8 @@
 }
 
 #comment {
-    width: 720px;
-    height: 70px;
+    width: 500px;
+    height: 180px;
     font-size: 25px;
     background-color: rgb(136, 145, 135);
 }
@@ -28,7 +28,7 @@ main {
 }
 
 body {
-    background-image: url(/assets/images/1484829698-07-wm.jpg);
+    background-image: url(../images/1484829698-07-wm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
