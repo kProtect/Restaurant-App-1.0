@@ -3,30 +3,32 @@
     padding: 0;
     margin: 0;
     text-align: center;
+    display: ;
 }
 
 #comment {
     width: 500px;
     height: 180px;
     font-size: 25px;
+    background-color: rgb(136, 145, 135);
 }
 
 header {
     background-color: rgb(0, 0, 0);
     text-align: center;
-    padding: 100px 20px 100px 20px;
+    padding: 80px 20px 80px 20px;
     font-size: x-large;
     font-family: cursive;
     color:rgb(221, 221, 221)
 }
 
 main {
-    padding: 200px;
+    padding: 300px;
 
 }
 
 body {
-    background-image: url(/pics/1484829698-07-wm.jpg);
+    background-image: url(../images/1484829698-07-wm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -37,12 +39,20 @@ body {
 }
 
 span {
-    background-color: rgb(221, 221, 221);
-    color: rgb(47, 58, 68);
-    font-size: 200px;
+    background-color: rgb(8, 188, 233);
+    color: rgb(12, 12, 12);
+    height: 20px;
+    width: 20px;
+    
 }
 
 span:hover {
     background-color: rgb(209, 169, 38);
     color: gold;
+}
+
+#submit {
+    background-color: rgb(8, 188, 233);
+    height: 40px;
+
 }
