@@ -1,3 +1,35 @@
+var bodyE = document.querySelector("body")
+var addDivDog = document.createElement("div")
+var addImgDog = document.createElement("img")
+var addPDog = document.createElement("p")
+
+
+function getRandomImage() {
+    // get the data from the server
+    $.get("https://dog.ceo/api/breeds/image/random", function(data) {
+        // set the source of the image
+        $('#dogImage').attr('src', data.message);
+        console.log("Random Dog Pic Retrieved:\n", data.message);
+    });
+
+};
+getRandomImage();
+
+function myFunction(event) {
+    event.preventDefault();
+    bodyE.append(addDivDog);
+    addDivDog.append(addImgDog);
+    addImgDog.setAttribute("class", "fit-picture");
+    addImgDog.setAttribute("alt", "HappyDog");
+    addImgDog.setAttribute("id", "dogImage");
+    addImgDog.setAttribute("src", getRandomImage());
+    bodyE.append(addPDog);
+    addPDog.setAttribute("style", "p");
+    addPDog.textContent = "Your Puppy is Welcome to Join You";
+};
+document.getElementById("submit").addEventListener("click", myFunction);
+
+
 var submitButtonEl = $('#submit')
 var userCommentEl = $('#comment')
 var starEl = $('#star')
@@ -7,13 +39,13 @@ var nthComment = 1;
 function makeComment() {}
 
 function makeReview() {
-    for(var i = 0; i <=nthComment-1; i++){
+    for (var i = 0; i <= nthComment - 1; i++) {
         reviewEl.append(`<textarea>WOW!</textarea>`);
         nthComment += 1;
     }
 
 }
-
+/*
 function getRandomImage()
 {
   // get the data from the server
@@ -32,24 +64,25 @@ $("#submit").on("click", function() {
     var userText = $(this).siblings("textarea").val();
     console.log(userText);
     var userStar = $(this).siblings("id");
-    
-   getRandomImage(); // API generates a random image of a dog.
 
-   
-   var reviews = JSON.parse(window.localStorage.getItem('reviews')) || []
-   var newRating = {
-     userStar: userStar,
-     userText: userText
-   }
+    getRandomImage(); // API generates a random image of a dog.
 
-   reviews.push(newRating)
-   window.localStorage.setItem("reviews", JSON.stringify(reviews));
+
+    var reviews = JSON.parse(window.localStorage.getItem('reviews')) || []
+    var newRating = {
+        userStar: userStar,
+        userText: userText
+    }
+
+    reviews.push(newRating)
+    window.localStorage.setItem("reviews", JSON.stringify(reviews));
 })
 
 
 
-for(var i=0; i<nthComment; i++){
+for (var i = 0; i < nthComment; i++) {
 
     $(`#comment${i}`).val(localStorage.getItem(`comment${i}`)); // looping through Local Storage to save user values to the page after refresh.
-    
-    }
+
+}
+*/
