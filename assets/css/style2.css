@@ -1,24 +1,58 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-align: center;
+    display: ;
 }
 
 #comment {
-    width: 400px;
-    height: 120px;
+    width: 720px;
+    height: 70px;
+    font-size: 25px;
+    background-color: rgb(136, 145, 135);
 }
 
 header {
-    background-color: darkgray;
+    background-color: rgb(0, 0, 0);
     text-align: center;
-    padding: 20px 30px 20px 30px;
+    padding: 80px 20px 80px 20px;
     font-size: x-large;
     font-family: cursive;
-    border: solid;
-    
+    color:rgb(221, 221, 221)
 }
 
 main {
-    background-color: aqua;
+    padding: 300px;
+
+}
+
+body {
+    background-image: url(/assets/images/1484829698-07-wm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#submit {
+    font-family: cursive;
+    font-size: x-large;
+}
+
+span {
+    background-color: rgb(8, 188, 233);
+    color: rgb(12, 12, 12);
+    height: 20px;
+    width: 20px;
+    
+}
+
+span:hover {
+    background-color: rgb(209, 169, 38);
+    color: gold;
+}
+
+#submit {
+    background-color: rgb(8, 188, 233);
+    height: 40px;
+
 }

@@ -1,26 +1,23 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: white;
+    font-family: 'Grape Nuts', cursive;
 }
 
-body {
-    background-color: rgb(88, 180, 238);
-}
 
 header {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.144);
+    padding: 10px;
+    background-color: rgba(89, 90, 69, 0.89);
+    opacity: 0.7;
 }
 
 header h1 {
-
     display: inline-block;
 }
 
 header nav {
-
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -31,7 +28,7 @@ header div ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
 }
 
@@ -40,8 +37,30 @@ nav ul li a {
 }
 
 .background_image {
-    background-image: url(/pics/lobby.webp);
+    background-image: url(/assets/images/lobby.webp);
     background-size: cover;
-background-repeat: no-repeat;
-height: 700px;
+    background-repeat: no-repeat;
+    height: 700px;
+    opacity: 0.9;
+}
+
+.about {
+    margin-top: 80 px;
+}
+
+.about p {
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h1:hover {
+    color: rgb(235, 121, 15);
+    background-color: rgb(53, 41, 43);
+
+}
+
+a:hover {
+    color: rgb(235, 121, 15);
+    background-color: rgb(53, 41, 43);
 }
