@@ -8,7 +8,7 @@ function makeComment() {}
 
 function makeReview() {
     for(var i = 0; i <=nthComment-1; i++){
-        reviewEl.append();
+        reviewEl.append(`<textarea>WOW!</textarea>`);
         nthComment += 1;
     }
 
@@ -30,9 +30,20 @@ function getRandomImage()
 
 $("#submit").on("click", function() {
     var userText = $(this).siblings("textarea").val();
-    var userStar = $(this).siblings("textarea").attr();
-    localStorage.setItem(userText, userStar);
+    console.log(userText);
+    var userStar = $(this).siblings("id");
+    
    getRandomImage(); // API generates a random image of a dog.
+
+   
+   var reviews = JSON.parse(window.localStorage.getItem('reviews')) || []
+   var newRating = {
+     userStar: userStar,
+     userText: userText
+   }
+
+   reviews.push(newRating)
+   window.localStorage.setItem("reviews", JSON.stringify(reviews));
 })
 
 
