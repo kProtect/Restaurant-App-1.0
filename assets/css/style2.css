@@ -3,7 +3,6 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    display: ;
 }
 
 #comment {
@@ -23,20 +22,7 @@ header {
 }
 
 main {
-<<<<<<< HEAD
     padding: 200px;
-=======
-    padding: 5px;
-    background-image: url(../images/1484829698-07-wm.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-
-/*
-main {
-    padding: 300px;
->>>>>>> 50a6d4bb83a97f489493c5d910c292278943b509
 }
 
 body {
