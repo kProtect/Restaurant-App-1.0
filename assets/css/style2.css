@@ -22,17 +22,7 @@ header {
     color: rgb(221, 221, 221);
 }
 
-main {
-    padding: 5px;
-    background-image: url(../images/1484829698-07-wm.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
 
-
-/*
-main {
-    padding: 300px;
 }
 
 body {
@@ -41,7 +31,6 @@ body {
     background-repeat: no-repeat;
     height: 400px;
 }
-*/
 
 #submit {
     font-family: cursive;
