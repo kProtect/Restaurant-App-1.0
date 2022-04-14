@@ -19,15 +19,29 @@ header {
     padding: 80px 20px 80px 20px;
     font-size: x-large;
     font-family: cursive;
-    color:rgb(221, 221, 221)
+    color: rgb(221, 221, 221);
 }
 
 main {
+    padding: 5px;
+    background-image: url(../images/1484829698-07-wm.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*
+main {
+    padding: 300px;
+}
+
+body {
     background-image: url(../images/1484829698-07-wm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
 }
+*/
 
 #submit {
     font-family: cursive;
@@ -39,7 +53,6 @@ span {
     color: rgb(12, 12, 12);
     height: 20px;
     width: 20px;
-    
 }
 
 span:hover {
@@ -50,15 +63,13 @@ span:hover {
 #submit {
     background-color: rgb(8, 188, 233);
     height: 40px;
-
 }
 
-#submit:hover {
-    color: rgb(2, 2, 2);
-    background-color: gold;
+.fit-picture {
+    width: 250px;
 }
 
-header p:hover {
-color: gold;
+p {
+    color: brown;
+    text-align: center;
 }
-
