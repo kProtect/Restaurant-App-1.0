@@ -49,7 +49,7 @@ function getAppetizerFunction(event) {
     bodyE.append(addDivAppetizer);
     addDivAppetizer.append(addImgAppetizer);
     addImgAppetizer.setAttribute("class", "fit-picture");
-    addImgAppetizer.setAttribute("alt", "NiceCocktail");
+    addImgAppetizer.setAttribute("alt", "NiceAppetizer");
     addImgAppetizer.setAttribute("id", "appetizerImage");
     addImgAppetizer.setAttribute("src", getRandomAppetizer());
     bodyE.append(addPAppetizer);
