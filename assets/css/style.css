@@ -98,8 +98,23 @@ footer {
     background-color: antiquewhite;
 }
 
+<<<<<<< HEAD
+h1:hover {
+    color: rgb(235, 121, 15);
+}
+
+a:hover {
+    color: rgb(235, 121, 15);
+    background-color: rgb(53, 41, 43);
+}
+
+box {
+    box-sizing: border-box;
+    padding: 2rem;
+=======
 footer ul li a {
     padding: 10px 30px;
     text-decoration: none;
     font-size: 1.5rem;
+>>>>>>> 0d42af85386401a671afe2b247d69858ed247e30
 }
