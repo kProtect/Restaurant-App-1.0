@@ -21,17 +21,25 @@ header {
     color: rgb(221, 221, 221);
 }
 
+<<<<<<< HEAD
+main {
+    padding: 200px;
+}
+=======
+>>>>>>> 89e0827ab193b2fad7d5882ed2f1b299aeef559d
 
 body {
     background-image: url(../images/1484829698-07-wm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
+    width:  100%;
 }
 
 #submit {
     font-family: cursive;
     font-size: x-large;
+    text-align: center;
 }
 
 span {
