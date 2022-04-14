@@ -23,14 +23,10 @@ header {
 }
 
 main {
-    padding: 300px;
-
-}
-
-body {
     background-image: url(../images/1484829698-07-wm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 400px;
 }
 
 #submit {
@@ -56,3 +52,13 @@ span:hover {
     height: 40px;
 
 }
+
+#submit:hover {
+    color: rgb(2, 2, 2);
+    background-color: gold;
+}
+
+header p:hover {
+color: gold;
+}
+
