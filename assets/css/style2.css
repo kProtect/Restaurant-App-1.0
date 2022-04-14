@@ -19,18 +19,35 @@ header {
     padding: 80px 20px 80px 20px;
     font-size: x-large;
     font-family: cursive;
-    color:rgb(221, 221, 221)
+    color: rgb(221, 221, 221);
 }
 
+<<<<<<< HEAD
+
+=======
+main {
+<<<<<<< HEAD
+    padding: 200px;
+=======
+    padding: 5px;
+    background-image: url(../images/1484829698-07-wm.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+/*
 main {
     padding: 300px;
-
+>>>>>>> 50a6d4bb83a97f489493c5d910c292278943b509
+>>>>>>> b885bcb459e6f5fd6c2d3c4c703ff6ea74e1fe4d
 }
 
 body {
     background-image: url(../images/1484829698-07-wm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 400px;
 }
 
 #submit {
@@ -43,7 +60,6 @@ span {
     color: rgb(12, 12, 12);
     height: 20px;
     width: 20px;
-    
 }
 
 span:hover {
@@ -54,5 +70,13 @@ span:hover {
 #submit {
     background-color: rgb(8, 188, 233);
     height: 40px;
+}
 
+.fit-picture {
+    width: 250px;
+}
+
+p {
+    color: brown;
+    text-align: center;
 }
