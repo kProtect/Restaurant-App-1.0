@@ -44,9 +44,9 @@ nav ul li a {
 .background_image {
     background-image: url(/assets/images/lobby.webp);
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-    opacity: 0.9;    
+    height: 600px;
+    opacity: 0.9;   
+    width: 100%; 
 }
 
 #welcome {
