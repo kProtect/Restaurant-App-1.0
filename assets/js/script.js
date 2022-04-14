@@ -4,7 +4,7 @@ var addImgDog = document.createElement("img")
 var addPDog = document.createElement("p")
 
 
-function getRandomImage() {
+function getRandomDog() {
     // get the data from the server
     $.get("https://dog.ceo/api/breeds/image/random", function(data) {
         // set the source of the image
@@ -13,24 +13,57 @@ function getRandomImage() {
     });
 
 };
-getRandomImage();
+getRandomDog();
 
-function myFunction(event) {
+function getDogFunction(event) {
     event.preventDefault();
     bodyE.append(addDivDog);
     addDivDog.append(addImgDog);
     addImgDog.setAttribute("class", "fit-picture");
     addImgDog.setAttribute("alt", "HappyDog");
     addImgDog.setAttribute("id", "dogImage");
-    addImgDog.setAttribute("src", getRandomImage());
+    addImgDog.setAttribute("src", getRandomDog());
     bodyE.append(addPDog);
     addPDog.setAttribute("style", "p");
     addPDog.textContent = "Your Puppy is Welcome to Join You";
 };
-document.getElementById("submit").addEventListener("click", myFunction);
+document.getElementById("submit").addEventListener("click", getDogFunction);
 
+var bodyE = document.querySelector("body")
+var addDivCocktail = document.createElement("div")
+var addImgCocktail = document.createElement("img")
+var addPCocktail = document.createElement("p")
 
-var submitButtonEl = $('#submit')
+function getRandomCocktail() {
+    // get the data from the server
+    $.get("www.thecocktaildb.com/api/json/v1/1/random.php", function(data) {
+        $('#cocktailImage').attr('src', data.message)
+        console.log("Random Cocktail Pic Retrieved:\n", data.message);
+    });
+
+};
+getRandomCocktail();
+
+function getCocktailFunction(event) {
+    event.preventDefault();
+    bodyE.append(addDivCocktail);
+    addDivCocktail.append(addImgCocktail);
+    addImgCocktail.setAttribute("class", "fit-picture");
+    addImgCocktail.setAttribute("alt", "NiceCocktail");
+    addImgCocktail.setAttribute("id", "cocktailImage");
+    addImgCocktail.setAttribute("src", getRandomCocktail());
+    bodyE.append(addPCocktail);
+    addPCocktail.setAttribute("style", "p");
+    addPCocktail.textContent = "Thank you for your review. Please enjoy one of our Famous Cocktails on the house next time you visit us";
+};
+document.getElementById("submit").addEventListener("click", getCocktailFunction);
+
+/*
+const btnState = document.getElementById("submit");
+btnState.addEventListener("click", myFunction);
+*/
+
+/*
 var userCommentEl = $('#comment')
 var starEl = $('#star')
 var reviewEl = $('.box')
@@ -40,42 +73,27 @@ function makeComment() {}
 
 function makeReview() {
     for (var i = 0; i <= nthComment - 1; i++) {
-        reviewEl.append(`<textarea>WOW!</textarea>`);
+        reviewEl.append();
         nthComment += 1;
     }
 
 }
-/*
-function getRandomImage()
-{
-  // get the data from the server
-  $.get( "https://dog.ceo/api/breeds/image/random", function( data ) {
-    // set the source of the image
-    $('#dogImage').attr('src', data.message)
-  });
 
-  $.get("www.thecocktaildb.com/api/json/v1/1/random.php", function(data) {
-      $('#cocktailImage').attr('src', data.message)
-  })
+function getRandomImage() {
+    // get the data from the server
+    $.get("https://dog.ceo/api/breeds/image/random", function(data) {
+        // set the source of the image
+        $('#dogImage').attr('src', data.message)
+    });
 
 }
 
 $("#submit").on("click", function() {
     var userText = $(this).siblings("textarea").val();
-    console.log(userText);
-    var userStar = $(this).siblings("id");
-
+    var userStar = $(this).siblings("textarea").attr();
+    localStorage.setItem(userText, userStar);
+    // Andres_Note - Need to create couple of image element to put in there the images for the dog and the cocktail..
     getRandomImage(); // API generates a random image of a dog.
-
-
-    var reviews = JSON.parse(window.localStorage.getItem('reviews')) || []
-    var newRating = {
-        userStar: userStar,
-        userText: userText
-    }
-
-    reviews.push(newRating)
-    window.localStorage.setItem("reviews", JSON.stringify(reviews));
 })
 
 
