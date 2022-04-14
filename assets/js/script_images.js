@@ -30,33 +30,33 @@ function getDogFunction(event) {
 document.getElementById("submit").addEventListener("click", getDogFunction);
 
 var bodyE = document.querySelector("body")
-var addDivCocktail = document.createElement("div")
-var addImgCocktail = document.createElement("img")
-var addPCocktail = document.createElement("p")
+var addDivAppetizer = document.createElement("div")
+var addImgAppetizer = document.createElement("img")
+var addPAppetizer = document.createElement("p")
 
-function getRandomCocktail() {
+function getRandomAppetizer() {
     // get the data from the server
     $.get("www.thecocktaildb.com/api/json/v1/1/random.php", function(data) {
-        $('#cocktailImage').attr('src', data.message)
-        console.log("Random Cocktail Pic Retrieved:\n", data.message);
+        $('#appetizerImage').attr('src', data.message)
+        console.log("Random Appetizer Pic Retrieved:\n", data.message);
     });
 
 };
-getRandomCocktail();
+getRandomAppetizer();
 
-function getCocktailFunction(event) {
+function getAppetizerFunction(event) {
     event.preventDefault();
-    bodyE.append(addDivCocktail);
-    addDivCocktail.append(addImgCocktail);
-    addImgCocktail.setAttribute("class", "fit-picture");
-    addImgCocktail.setAttribute("alt", "NiceCocktail");
-    addImgCocktail.setAttribute("id", "cocktailImage");
-    addImgCocktail.setAttribute("src", getRandomCocktail());
-    bodyE.append(addPCocktail);
-    addPCocktail.setAttribute("style", "p");
-    addPCocktail.textContent = "Thank you for your review. Please enjoy one of our Famous Cocktails on the house next time you visit us";
+    bodyE.append(addDivAppetizer);
+    addDivAppetizer.append(addImgAppetizer);
+    addImgAppetizer.setAttribute("class", "fit-picture");
+    addImgAppetizer.setAttribute("alt", "NiceAppetizer");
+    addImgAppetizer.setAttribute("id", "appetizerImage");
+    addImgAppetizer.setAttribute("src", getRandomAppetizer());
+    bodyE.append(addPAppetizer);
+    addPAppetizer.setAttribute("style", "p");
+    addPAppetizer.textContent = "Thank you for your review. Please enjoy one of our Famous Appetizers on the house next time you visit us";
 };
-document.getElementById("submit").addEventListener("click", getCocktailFunction);
+document.getElementById("submit").addEventListener("click", getAppetizerFunction);
 
 /*
 const btnState = document.getElementById("submit");
