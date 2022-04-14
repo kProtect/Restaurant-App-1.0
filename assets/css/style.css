@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Grape Nuts', cursive;
+    text-align: center;
 }
 
 
@@ -20,34 +21,42 @@ header h1 {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
-    font-size: 20px;
+    font-size: 20px;  
 }
 
 header div ul {
     list-style-type: none;
+    
 }
 
 header nav ul li {
-    display: inline-block;
+    display: inline-block
     
 }
 
 nav ul li a {
-    padding: 8px 30px;
+    padding: 55px;
     text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .background_image {
     background-image: url(/assets/images/lobby.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 800px;
     opacity: 0.9;    
 }
 
+#welcome {
+    color: white;
+}
+
+
 #about {
     border-top: 2px solid gray;
+    background-color: lightblue
    
 }
 
@@ -55,26 +64,42 @@ nav ul li a {
 .about p{
     color: black;
     font-size: 2.0rem;
-    text-align: center;
     font-weight: bold;
 }
 
-section h1 {
+.about h1 {
     border-top: 3px solid gray;
-    text-align: center;
+    font-size: 2.5rem;
+}
+
+#menu {
+    background-color: lightgray;
+}
+
+.menu h1 {
+    border-top: 3px solid gray;
+    font-size: 3rem;
+}
+
+.menu h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+.menu p {
     font-size: 1.5rem;
 }
+
 
 footer {
     color: black;
     text-align: center;
+    border-top: 3px solid gray;
+    font-size: 1.8rem;
+    background-color: antiquewhite;
 }
 
-h1:hover {
-    color: rgb(235, 121, 15);
-}
-
-a:hover {
-    color: rgb(235, 121, 15);
-    background-color: rgb(53, 41, 43);
+footer ul li a {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
 }
