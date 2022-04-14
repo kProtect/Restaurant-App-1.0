@@ -26,17 +26,10 @@ main {
 }
 
 body {
-    background-image: url(../images/1484829698-07-wm.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 400px;
     width:  100%;
-}
-
-#submit {
-    font-family: cursive;
-    font-size: x-large;
-    text-align: center;
 }
 
 span {
@@ -51,9 +44,13 @@ span:hover {
     color: gold;
 }
 
-#submit {
+
+button {
     background-color: rgb(8, 188, 233);
     height: 40px;
+    font-family: cursive;
+    font-size: x-large;
+    text-align: center;
 }
 
 .fit-picture {
@@ -61,6 +58,5 @@ span:hover {
 }
 
 p {
-    color: brown;
     text-align: center;
 }
