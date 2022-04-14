@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -8,7 +8,7 @@
 
 header {
     padding: 10px;
-    background-color: black;
+    background-color: rgba(89, 90, 69, 0.89);
     opacity: 0.7;
     color: white;
 }
@@ -28,7 +28,7 @@ header div ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     
 }
@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 .background_image {
-    background-image: url(/pics/lobby.webp);
+    background-image: url(/assets/images/lobby.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 1000px;
@@ -68,4 +68,13 @@ section h1 {
 footer {
     color: black;
     text-align: center;
+}
+
+h1:hover {
+    color: rgb(235, 121, 15);
+}
+
+a:hover {
+    color: rgb(235, 121, 15);
+    background-color: rgb(53, 41, 43);
 }
