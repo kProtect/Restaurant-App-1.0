@@ -33,12 +33,18 @@ var bodyE = document.querySelector("body")
 var addDivAppetizer = document.createElement("div")
 var addImgAppetizer = document.createElement("img")
 var addPAppetizer = document.createElement("p")
+const get_meal_btn = document.getElementById("submit");
 
 function getRandomAppetizer() {
-    // get the data from the server
-    $.get("www.thecocktaildb.com/api/json/v1/1/random.php", function(data) {
-        $('#appetizerImage').attr('src', data.message)
-        console.log("Random Appetizer Pic Retrieved:\n", data.message);
+    get_meal_btn.addEventListener("click", () => {
+        fetch('https://www.themealdb.com/api/json/v1/1/random.php')
+            .then(res => res.json())
+            .then(res => {
+                createMeal(res.meal.strMealThumb);
+            })
+            .catch(e => {
+                console.warn(e);
+            });
     });
 
 };
@@ -56,43 +62,4 @@ function getAppetizerFunction(event) {
     addPAppetizer.setAttribute("style", "p");
     addPAppetizer.textContent = "Thank you for your review. Please enjoy one of our Famous Appetizers on the house next time you visit us";
 };
-document.getElementById("submit").addEventListener("click", getAppetizerFunction);
-
-/*
-const btnState = document.getElementById("submit");
-btnState.addEventListener("click", myFunction);
-*/
-
-/*
-var userCommentEl = $('#comment')
-var starEl = $('#star')
-var reviewEl = $('.box')
-var nthComment = 1;
-
-function makeComment() {}
-
-function makeReview() {
-    for (var i = 0; i <= nthComment - 1; i++) {
-        reviewEl.append();
-        nthComment += 1;
-    }
-
-}
-
-function getRandomImage() {
-    // get the data from the server
-    $.get("https://dog.ceo/api/breeds/image/random", function(data) {
-        // set the source of the image
-        $('#dogImage').attr('src', data.message)
-    });
-
-}
-
-
-
-for (var i = 0; i < nthComment; i++) {
-
-    $(`#comment${i}`).val(localStorage.getItem(`comment${i}`)); // looping through Local Storage to save user values to the page after refresh.
-
-}
-*/
+get_meal_btn.addEventListener("click", getAppetizerFunction);
