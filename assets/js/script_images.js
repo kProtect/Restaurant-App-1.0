@@ -88,14 +88,6 @@ function getRandomImage() {
 
 }
 
-$("#submit").on("click", function() {
-    var userText = $(this).siblings("textarea").val();
-    var userStar = $(this).siblings("textarea").attr();
-    localStorage.setItem(userText, userStar);
-    // Andres_Note - Need to create couple of image element to put in there the images for the dog and the cocktail..
-    getRandomImage(); // API generates a random image of a dog.
-})
-
 
 
 for (var i = 0; i < nthComment; i++) {
