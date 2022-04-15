@@ -6,7 +6,7 @@ var nthComment = 1;
  
 function makeComment() {}
  
-function makeReview(userText) {
+function makeReview(userText, userStar) {
    for(var i = 0; i <nthComment; i++){
        reviewEl.append(`<div class="box">`+ userText + `</div>`);     
    }
@@ -25,7 +25,7 @@ $("#submit").on("click", function() {
  
   reviews.push(newRating)
   window.localStorage.setItem("reviews", JSON.stringify(reviews));
-  makeReview(userText);
+  makeReview(userText, userStar);
 })
  
 for(var i=0; i<nthComment; i++){
