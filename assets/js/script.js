@@ -3,6 +3,9 @@ var userCommentEl = $('#comment')
 var starEl = $('#star')
 var reviewEl = $('#review')
 var nthComment = 1;
+var starRating = 0;
+
+console.log(starRating);
  
 function showComment() {
    var reviews = JSON.parse(window.localStorage.getItem('reviews')) || []
@@ -20,13 +23,19 @@ function makeReview(userText, userStar) {
    }
 }
 
-
+$('.fa').on('click', function () {
+   var newstarRating = $(this).attr('id'); 
+   starRating = newstarRating;
+   return starRating;
+})
  
 $("#submit").on("click", function() {
    var userText = $("#comment").val();
-   console.log(userText);
-   var userStar = $(this).siblings("id");
-  
+   var userStar = starRating; 
+   console.log(userStar);
+
+
+   if(starRating !=0 && userText !="") {
   var reviews = JSON.parse(window.localStorage.getItem('reviews')) || []
   var newRating = {
     userStar: userStar,
@@ -36,11 +45,15 @@ $("#submit").on("click", function() {
   reviews.push(newRating)
   window.localStorage.setItem("reviews", JSON.stringify(reviews));
   makeReview(userText, userStar);
+   } else {
+      window.alert('One of the fields you have entered is blank. You must submit a comment and leave a star rating.');
+   }
 
-  if (!userText || !userStar){
-     alert("please leave review")
-  }
-  return
+
+//   if (!userText || !userStar){
+//      alert("please leave review")
+//   }
+//   return
 })
  
 
