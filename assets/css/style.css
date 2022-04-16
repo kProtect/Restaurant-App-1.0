@@ -21,17 +21,16 @@ header h1 {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    font-size: 20px;  
+    font-size: 20px;
 }
 
 header div ul {
     list-style-type: none;
-    
+
 }
 
 header nav ul li {
     display: inline-block
-    
 }
 
 nav ul li a {
@@ -43,10 +42,11 @@ nav ul li a {
 
 .background_image {
     background-image: url(/assets/images/lobby.webp);
-    background-size: cover;
     height: 600px;
-    opacity: 0.9;   
-    width: 100%; 
+    opacity: 0.9;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #welcome {
@@ -57,11 +57,10 @@ nav ul li a {
 #about {
     border-top: 2px solid gray;
     background-color: lightblue
-   
 }
 
 
-.about p{
+.about p {
     color: black;
     font-size: 2.0rem;
     font-weight: bold;
@@ -85,6 +84,7 @@ nav ul li a {
     font-size: 1.8rem;
     margin-top: 10px;
 }
+
 .menu p {
     font-size: 1.5rem;
 }
@@ -103,3 +103,8 @@ footer ul li a {
     text-decoration: none;
     font-size: 1.5rem;
 }
+@media screen and (max-width: 804px) {
+    a {
+      display: inline;
+    }
+  }
