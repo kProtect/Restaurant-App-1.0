@@ -16,7 +16,7 @@ showComment();
 function makeReview(userText, userStar) {
    for(var i = 0; i <nthComment; i++){
        reviewEl.append(`<div class="box">`+ userText + `</div>`);
-       reviewEl.append(`<div class="box">`+ userStar + `</div>`);     
+       reviewEl.append(`<div class="fa fa-star checked">`+ userStar + `</div>`);     
    }
 }
 
@@ -38,6 +38,14 @@ $("#submit").on("click", function() {
   makeReview(userText, userStar);
 })
  
+
+
+
+
+
+
+
+
 for(var i=0; i<nthComment; i++){
  
    $(`#comment${i}`).val(localStorage.getItem(`comment${i}`)); // looping through Local Storage to save user values to the page after refresh.
