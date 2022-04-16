@@ -60,3 +60,13 @@ button {
 p {
     text-align: center;
 }
+
+.box {
+    width: 600px;
+    height: 150px;
+    font-size: 25px;
+    background-color: beige;
+    text-align: center;
+    border: 2rem;
+    margin-bottom: 5px;
+}
