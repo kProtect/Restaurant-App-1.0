@@ -16,7 +16,7 @@ showComment();
 function makeReview(userText, userStar) {
    for(var i = 0; i <nthComment; i++){
        reviewEl.append(`<div class="box">`+ userText + `</div>`);
-       reviewEl.append(`<div class="fa fa-star checked">`+ userStar + `</div>`);     
+       reviewEl.append(`<div class="fa fa-star">`+ userStar + `</div>`);     
    }
 }
 
@@ -36,6 +36,11 @@ $("#submit").on("click", function() {
   reviews.push(newRating)
   window.localStorage.setItem("reviews", JSON.stringify(reviews));
   makeReview(userText, userStar);
+
+  if (!userText || !userStar){
+     alert("please leave review")
+  }
+  return
 })
  
 
