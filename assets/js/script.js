@@ -58,12 +58,6 @@ $("#submit").on("click", function() {
  
 
 
-
-
-
-
-
-
 for(var i=0; i<nthComment; i++){
  
    $(`#comment${i}`).val(localStorage.getItem(`comment${i}`)); // looping through Local Storage to save user values to the page after refresh.
