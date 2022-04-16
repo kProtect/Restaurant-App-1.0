@@ -5,87 +5,58 @@
     text-align: center;
 }
 
-#comment {
-    width: 180px;
-    height: 50px;
-    font-size: 25px;
-    background-color: rgb(136, 145, 135);
-    align-items: center;
-    border-style: solid;
-    border-color: black;
-}
-
 header {
     background-color: rgb(0, 0, 0);
     text-align: center;
     padding: 50px 20px;
     font-size: x-large;
-    font-family: cursive;
     color: rgb(221, 221, 221);
-
 }
 
 main {
     padding: 20px;
 }
 
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    width: 100%;
-}
 
 span {
-    display: flex;
-    background-color: rgb(8, 188, 233);
-    color: rgb(12, 12, 12);
+    color: black;
     height: 20px;
     width: 20px;
-    align-content: center;
-    justify-content: center;
 }
 
 #comment {
-    display: flex;
+    display: block;
     width: 500px;
     height: 180px;
     font-size: 25px;
     background-color: rgb(136, 145, 135);
-    align-content: center;
-    justify-content: center;
 }
 
 span:hover {
-    background-color: rgb(209, 169, 38);
     color: gold;
 }
 
-
 button {
-    background-color: rgb(8, 188, 233);
     height: 40px;
-    font-family: cursive;
     font-size: x-large;
     text-align: center;
-}
-
-.fit-picture {
-    width: 250px;
 }
 
 p {
     text-align: center;
 }
 
+#review {
+    margin-top: 50px;
+}
+
 .box {
-    width: 100px;
+    width: 150px;
     height: 50px;
     font-size: 25px;
     background-color: gray;
     text-align: center;
     border: 2px solid black;
     margin-bottom: 5px;
-    
 }
 
