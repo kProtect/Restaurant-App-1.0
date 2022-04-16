@@ -68,5 +68,6 @@ p {
     background-color: beige;
     text-align: center;
     border: 2rem;
+    border-color: black;
     margin-bottom: 5px;
 }

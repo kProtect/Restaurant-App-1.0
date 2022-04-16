@@ -24,9 +24,10 @@ function makeReview(userText, userStar) {
  
 $("#submit").on("click", function() {
    var userText = $("#comment").val();
-   console.log(userText);
    var userStar = $(this).siblings("id");
-  
+
+
+   if(userStar != 0 && userText !="") {
   var reviews = JSON.parse(window.localStorage.getItem('reviews')) || []
   var newRating = {
     userStar: userStar,
@@ -36,6 +37,10 @@ $("#submit").on("click", function() {
   reviews.push(newRating)
   window.localStorage.setItem("reviews", JSON.stringify(reviews));
   makeReview(userText, userStar);
+   } else {
+      window.alert('One of the fields you have entered is blank. You must submit a comment and leave a star rating.');
+   }
+
 })
  
 
