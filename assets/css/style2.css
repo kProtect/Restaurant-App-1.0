@@ -30,6 +30,7 @@ span {
     height: 180px;
     font-size: 25px;
     background-color: rgb(136, 145, 135);
+    margin-left: 680px;
 }
 
 span:hover {
