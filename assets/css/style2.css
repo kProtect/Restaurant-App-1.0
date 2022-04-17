@@ -67,11 +67,11 @@ p {
     height: 50px;
     font-size: 25px;
     background-color: gray;
-    text-align: center;
     border: 2rem;
     border-color: black;
     border: 2px solid black;
     margin-bottom: 5px;
+    margin-left: 250px;
 }
 
 .displayNone {
@@ -80,8 +80,17 @@ p {
 
 .fit-picture {
     width: 250px;
-    display: inline-flex;
 }
+
+.reviewImages {
+    display: flex;
+    flex-direction: row;
+}
+
+.divDog {
+    margin-bottom: 50px;
+}
+
 
 @media only screen and (max-width: 480px) {
     .container {
