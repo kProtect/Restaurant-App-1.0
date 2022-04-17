@@ -22,7 +22,7 @@ header {
 
 .container {
     width: 800px;
-    background: #111;
+    background: lightcoral;
     padding: 20px 30px;
     border: 1px solid #444;
     border-radius: 5px;
@@ -41,6 +41,7 @@ span {
     height: 180px;
     font-size: 25px;
     background-color: rgb(136, 145, 135);
+    margin-left: 125px;
 }
 
 span:hover {
@@ -81,3 +82,24 @@ p {
     width: 250px;
     display: inline-flex;
 }
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+    #comment {
+        width: 50%;
+        height: 50%;
+    }
+    }
+
+    @media only screen and (max-width: 720px) {
+        .container {
+            width: 80%;
+        }
+        #comment {
+            width: 50%;
+            height: 50%;
+        }
+        }
+    
