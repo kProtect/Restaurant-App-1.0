@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Grape Nuts', cursive;
+    text-align: center;
 }
 
 
@@ -20,62 +21,122 @@ header h1 {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-size: 20px;
 }
 
 header div ul {
     list-style-type: none;
+
 }
 
 header nav ul li {
-    display: inline-block;
-    
+    display: inline-block
 }
 
 nav ul li a {
-    padding: 8px 30px;
+    padding: 55px;
     text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .background_image {
-    background-image: url(/assets/images/lobby.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1000px;
+    background-image: url(https://media.istockphoto.com/photos/modern-restaurant-interior-design-picture-id1211547141?k=20&m=1211547141&s=612x612&w=0&h=KiZX3NBZVCK4MlSh4BJ8hZNSJcTIMbNSSV2yusw2NmM=);
+    height: 600px;
     opacity: 0.9;
-    
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+#welcome {
+    color: white;
+}
+
 
 #about {
     border-top: 2px solid gray;
-    text-align: center;
+    background-color: lightblue
 }
 
 
-.about p{
+.about p {
     color: black;
     font-size: 2.0rem;
-    text-align: center;
     font-weight: bold;
 }
 
-section h1 {
+.about h1 {
     border-top: 3px solid gray;
-    text-align: center;
+    font-size: 2.5rem;
+}
+
+#menu {
+    background-color: lightgray;
+}
+
+.menu h1 {
+    border-top: 3px solid gray;
+    font-size: 3rem;
+}
+
+.menu h2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+.menu p {
     font-size: 1.5rem;
 }
+
 
 footer {
     color: black;
     text-align: center;
+    border-top: 3px solid gray;
+    font-size: 1.8rem;
+    background-color: antiquewhite;
 }
 
-h1:hover {
-    color: rgb(235, 121, 15);
+footer ul li button  {
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 20px
 }
 
-a:hover {
-    color: rgb(235, 121, 15);
-    background-color: rgb(53, 41, 43);
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+
+ .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
+  
+

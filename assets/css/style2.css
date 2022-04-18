@@ -2,41 +2,112 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 header {
     text-align: center;
+    padding: 50px 20px;
     font-size: x-large;
+    color: rgb(221, 221, 221);
 }
 
-main {
-    padding: 100px;
+#main {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
 }
 
-body {
-    background: url(../images/1484829698-07-wm.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#submit, #comment {
-    font-size: 1.8rem;
-    display: block;
+.container {
+    width: 800px;
+    background: lightcoral;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    
 }
 
 span {
-    color: rgb(12, 12, 12);
-    height: 50px;
-    width: 50px;
+    color: black;
+    height: 20px;
+    width: 20px;
+}
+
+#comment {
+    display: block;
+    width: 500px;
+    height: 180px;
+    font-size: 25px;
+    background-color: rgb(136, 145, 135);
+    margin-left: 125px;
 }
 
 span:hover {
-    background-color: rgb(209, 169, 38);
     color: gold;
 }
 
-#submit {
-    background-color: rgb(8, 188, 233);
+button {
     height: 40px;
-
+    font-size: x-large;
+    text-align: center;
 }
+
+p {
+    text-align: center;
+}
+
+#review {
+    margin-top: 50px;
+}
+
+.box {
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+    background-color: gray;
+    border: 2rem;
+    border-color: black;
+    border: 2px solid black;
+    margin-bottom: 5px;
+    margin-left: 250px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.fit-picture {
+    width: 250px;
+}
+
+.reviewImages {
+    display: flex;
+    flex-direction: row;
+}
+
+.divDog {
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+    #comment {
+        width: 50%;
+        height: 50%;
+    }
+    }
+
+    @media only screen and (max-width: 720px) {
+        .container {
+            width: 80%;
+        }
+        #comment {
+            width: 50%;
+            height: 50%;
+        }
+        }
+    
