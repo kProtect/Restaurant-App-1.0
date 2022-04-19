@@ -139,4 +139,10 @@ footer ul li button  {
   cursor: pointer;
 }
   
-
+@media only screen and (max-width: 480px) {
+    .background_image {
+        width: 400px;
+        height: 400px;
+    }
+    
+    }
