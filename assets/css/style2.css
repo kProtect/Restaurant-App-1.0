@@ -36,6 +36,10 @@ span:hover {
     color: gold;
 }
 
+.checked {
+    color: gold;
+}
+
 button {
     height: 40px;
     font-size: x-large;
@@ -51,14 +55,19 @@ p {
 }
 
 .box {
-    width: 150px;
-    height: 50px;
+    width: 500px;
+    height: 150px;
     font-size: 25px;
-    background-color: gray;
+    background-color: beige;
     text-align: center;
     border: 2rem;
     border-color: black;
     border: 2px solid black;
-    margin-bottom: 5px;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+   
 }
+/* 1. change font-size in .fa to larger to make the stars bigger
+2. put a black line under each review for cleanliness and separation
+3. make sure the stars are near each comment they go with
 
