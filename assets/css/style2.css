@@ -72,8 +72,8 @@ p {
 }
 
 .box {
-    width: 500px;
-    height: 150px;
+    width: auto;
+    height: 100px;
     font-size: 25px;
     background-color: beige;
     text-align: center;
@@ -87,8 +87,11 @@ p {
     border: 2rem;
     border-color: black;
     border: 2px solid black;
+<<<<<<< HEAD
     margin-bottom: 5px;
     margin-left: 130px;
+=======
+>>>>>>> c83b5a386eebdbd439014033979085b633090ac4
 }
 
 .displayNone {
