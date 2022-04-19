@@ -72,23 +72,17 @@ p {
 }
 
 .box {
-    width: auto;
-    height: 100px;
+    width: 250px;
+    height: 50px;
     font-size: 25px;
     background-color: beige;
     text-align: center;
-    border: 2rem;
+    border: 1rem;
     border-color: black;
     border: 2px solid black;
     border-radius: 10px;
-    margin-bottom: 5rem;
-
-    background-color: gray;
-    border: 2rem;
-    border-color: black;
-    border: 2px solid black;
-    margin-bottom: 5px;
-    margin-left: 130px;
+    margin-bottom: 2rem;
+    margin-left: 250px;
 }
 
 .displayNone {
